@@ -40,3 +40,13 @@ To resolve the partial dependency, we can split the table into two: 'EMPLOYEE' f
 
 
 
+<h1> Third Normal Form (3NF) </h1>
+
+<ul>
+<li> To start, 3NF expects that a table should first be in 2NF—that means removing partial dependencies of any column on the primary key. Then, it requires that all attributes are only dependent on the primary key, eliminating transitive dependencies. </li>
+<li> To achieve 3NF, start by ensuring your table is in 2NF, then check for transitive dependencies. These occur when a non-primary key attribute depends on another non-key attribute, rather than directly on the primary key. This can lead to redundancy and inconsistency, which you avoid by creating additional tables and establishing foreign key relationships. </li>
+<li> In 3NF, we further minimize redundancy by ensuring that only primary keys influence non-primary key attributes. This means every piece of non-key data depends directly on the primary key, reducing the chance for anomalies. </li>
+
+</ul>
+
+Achieving 3NF indeed reduces redundancy and boosts maintainability, making scaling more efficient. 
